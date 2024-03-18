@@ -34,7 +34,9 @@ export async function findNearestBorne(latitude, longitude, distance) {
   const URL = "https://carsapprestapi.azurewebsites.net/"
 
   try {
+    
     const response = await fetch(URL+`findNearestBorne?latitude=${latitude}&longitude=${longitude}&distance=${distance}`);
+    console.log(response)
     nearestBorne = await response.json();
     console.log(nearestBorne);
     return nearestBorne;
