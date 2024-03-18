@@ -7,9 +7,9 @@ export async function calculTimeSOAP(numbers) {
 
   // onMount(async () => {
     //const numbers = [12.2, 12.3, 1.7];
-
+    const URL = "https://carsapprestapi.azurewebsites.net/"
     try {
-      const response = await fetch(`http://127.0.0.1:3000/calculateHour?numbers=${JSON.stringify(numbers)}`);
+      const response = await fetch(URL+`calculateHour?numbers=${JSON.stringify(numbers)}`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);

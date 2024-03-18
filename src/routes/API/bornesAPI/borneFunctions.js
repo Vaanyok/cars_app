@@ -31,8 +31,10 @@ export function calculTempsSurBorne(bornesPuissance) {
 
 export async function findNearestBorne(latitude, longitude, distance) {
   let nearestBorne = null;
+  const URL = "https://carsapprestapi.azurewebsites.net/"
+
   try {
-    const response = await fetch(`http://127.0.0.1:3000/findNearestBorne?latitude=${latitude}&longitude=${longitude}&distance=${distance}`);
+    const response = await fetch(URL+`findNearestBorne?latitude=${latitude}&longitude=${longitude}&distance=${distance}`);
     nearestBorne = await response.json();
     console.log(nearestBorne);
     return nearestBorne;
