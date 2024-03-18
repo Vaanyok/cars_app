@@ -6,6 +6,8 @@
   export let onCitySelected;
 
   import { createEventDispatcher } from 'svelte';
+  import {OPEN_CAGE_API_KEY} from "../lib/Env"
+ 
 
   const dispatch = createEventDispatcher();
 
@@ -13,7 +15,7 @@
   let searchTerm = '';
   let searchResults = [];
 
-  const OPEN_CAGE_API_KEY = 'cf301891475c40a4b22e597dd91813a8'; // Replace with your OpenCage API key
+
 
   async function searchCity() {
     try {

@@ -1,7 +1,10 @@
           
 import { Client, cacheExchange, fetchExchange } from '@urql/svelte';
 import { getVehicleListQuery, getVehicleDetailsQuery } from './queries';
- 
+import {APP_ID, CLIENT_ID} from "../../../lib/Env"
+
+
+
 /**
  * For the purpose of this example we use urgl - lightweights GraphQL client.
  * To establish a connection with Chargetrip GraphQL API you need to have an API key.
@@ -11,8 +14,8 @@ import { getVehicleListQuery, getVehicleDetailsQuery } from './queries';
  */ 
 const headers = {
   //Replace this x-client-id and app-id with your own to get access to more vehicles
-  'x-client-id': '659fe63003f11572e9c6a5ad',
-  'x-app-id': '659fe63003f11572e9c6a5af',
+  'x-client-id': CLIENT_ID,
+  'x-app-id': APP_ID,
 };
  
 const client = new Client({

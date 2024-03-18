@@ -39,7 +39,7 @@
 
     marker.bindPopup(`
       <strong>
-        <a href='${city.url}' target='_blank'>${city.name}</a>
+        <name your variable VITE_<some name> for example VITE_API_URL to store where your backend location is. That's not sensitive information so it's ok to expose this through your svelte app to the internet.a href='${city.url}' target='_blank'>${city.name}</a>
       </strong>
     `);
 

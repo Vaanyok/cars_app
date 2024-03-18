@@ -1,10 +1,6 @@
 {
 	"name": "cars-app",
 	"version": "0.0.1",
-	"engines": {
-		"node": "^v21.1.7",
-		"npm" : "10.5.0"
-	},
 	"scripts": {
 		"start": "vite start",
 		"dev": "vite dev",
@@ -19,6 +15,7 @@
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"dotenv": "^16.4.5",
 		"svelte": "^4.2.7",
 		"svelte-adapter-azure-swa": "^0.20.0",
 		"svelte-check": "^3.6.0",
